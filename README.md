@@ -1,5 +1,5 @@
 # ubuntu-vim-ycm-sshd
-Dockeroized Ubuntu with vim, YouCompleteMe and SSH service, built on top of offical Ubuntu 18.04
+Dockeroized Ubuntu with vim, built on top of offical Ubuntu 18.04.
 
 ## Basic Usage
 #### Authentication by password
