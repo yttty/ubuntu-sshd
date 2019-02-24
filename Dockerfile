@@ -6,7 +6,8 @@ ENV ROOT_PASSWORD=root \
 
 ADD entrypoint.sh /
 
-RUN apt-get install -y openssh-server \
+RUN apt-get update \
+    && apt-get install -y openssh-server \
     && chmod a+x /entrypoint.sh \
     && mkdir -p /var/run/sshd \
     && mkdir -p /root/.ssh \
