@@ -1,10 +1,14 @@
-FROM ubuntu:18.04
-LABEL Terrill Yang "https://github.com/yttty"
+FROM ubuntu:20.04
+LABEL Tim Yang "https://github.com/yttty/ubuntu-sshd"
 
 ENV ROOT_PASSWORD=root \
     KEYPAIR_LOGIN=false
 
 ADD entrypoint.sh /
+
+# Change mirror
+RUN sed -i 's/archive.ubuntu.com/opentuna.cn/g' /etc/apt/sources.list \
+    && sed -i 's/security.ubuntu.com/opentuna.cn/g' /etc/apt/sources.list
 
 RUN apt-get update \
     && apt-get install -y openssh-server \

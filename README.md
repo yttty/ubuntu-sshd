@@ -1,7 +1,9 @@
 # ubuntu-sshd
 Dockeroized Ubuntu with vim, built on top of offical Ubuntu 18.04.
 
-Docker Hub: [yttty/ubuntu-sshd](https://hub.docker.com/r/yttty/ubuntu-sshd), Github: [yttty/ubuntu-sshd](https://github.com/yttty/ubuntu-sshd)
+~~Docker Hub: [yttty/ubuntu-sshd](https://hub.docker.com/r/yttty/ubuntu-sshd)~~ (removed)
+
+Github: [yttty/ubuntu-sshd](https://github.com/yttty/ubuntu-sshd)
 
 ## Basic Usage
 #### Authentication by password
